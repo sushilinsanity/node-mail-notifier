@@ -22,7 +22,7 @@ let usersEmail = [];
 let testAccount;
 let transporter;
 
-cron.schedule("* * * * *", () => {
+cron.schedule("0 0 * * *", () => {
   console.log('Starting scheduled email service');
   startDB();
 })
